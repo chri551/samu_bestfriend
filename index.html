@@ -17,6 +17,13 @@
     ul{line-height:1.7}
     .rivalry p{font-weight:600}
     .note-fortnite{color:#9b0812;font-weight:700}
+    .vs{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;background:#ffd700;color:#000;margin:8px auto;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .rival-container{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:0.5rem;align-items:stretch}
+    .team{padding:12px;border-radius:8px;min-height:80px;display:flex;flex-direction:column;justify-content:center}
+    .team-juve{background:linear-gradient(180deg,#fff,#f2f2f2);border:2px solid #000;color:#000}
+    .team-juve h3{color:#000;margin:0 0 6px 0}
+    .team-roma{background:linear-gradient(180deg,#7b1b1b,#5d1414);border:2px solid #7b1b1b;color:#fff}
+    .team-roma h3{color:#ffd700;margin:0 0 6px 0}
   </style>
 </head>
 <body>
@@ -46,10 +53,18 @@
     <p>Questa pagina è un piccolo omaggio all'amicizia e alla passione per la squadra.</p>
     
     <h2>Rivalità amichevole</h2>
-    <div class="rivalry">
-      <p><strong>Rivalità:</strong> Io sono juventino e Samuele è romanista — è una rivalità scherzosa che ci anima durante le partite.</p>
-      <p><strong>Nota su Fortnite:</strong> <u class="note-fortnite">Samuele su Fortnite fa proprio schifo</u> — lo prendiamo sempre in giro per questo!</p>
+    <div class="vs">VS</div>
+    <div class="rival-container">
+      <div class="team team-juve">
+        <h3>Juventus</h3>
+        <p><strong>Io:</strong> juventino, sempre pronto allo sfottò durante le partite.</p>
+      </div>
+      <div class="team team-roma">
+        <h3>Roma</h3>
+        <p><strong>Samuele:</strong> romanista, la nostra rivalità rende le partite più divertenti.</p>
+      </div>
     </div>
+    <p style="text-align:center;margin-top:10px"><strong>Nota su Fortnite:</strong> <u class="note-fortnite">Samuele su Fortnite fa proprio schifo</u> — lo prendiamo sempre in giro per questo!</p>
     
     <h2>Perché è speciale per l'INPS</h2>
     <p>Per l'INPS Samuele riceve un sostegno ufficiale che lo aiuta nella vita quotidiana.</p>

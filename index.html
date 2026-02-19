@@ -6,14 +6,31 @@
   <title>Samuele — Romanista Fracico</title>
   <style>
     body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:2rem;background:#f6f7fb;color:#111}
-    .card{max-width:760px;margin:1.5rem auto;padding:1.5rem;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
-    h1{color:#9b0812;margin-bottom:0.25rem}
+    .card{max-width:760px;margin:1.5rem auto;padding:1.5rem;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);position:relative}
+    .card::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;border-radius:10px 10px 0 0;background:linear-gradient(90deg,#7b1b1b 50%,#000 50%)}
+    .header-badges{display:flex;gap:12px;align-items:center;margin-bottom:1rem}
+    .badge{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,0.12)}
+    .badge-roma{background:#7b1b1b}
+    .badge-juve{background:linear-gradient(135deg,#000 50%,#fff 50%);color:#000;border:2px solid #000}
+    h1{color:#7b1b1b;margin-bottom:0.25rem}
     h2{margin-top:1.25rem}
     ul{line-height:1.7}
+    .rivalry p{font-weight:600}
+    .note-fortnite{color:#9b0812;font-weight:700}
   </style>
 </head>
 <body>
   <main class="card">
+    <div class="header-badges">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="badge badge-juve">J</span>
+        <span>Juventus</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="badge badge-roma">ASR</span>
+        <span>Roma</span>
+      </div>
+    </div>
     <h1>Samuele è un romanista fracico</h1>
     <p>Samuele è il mio amico e, con affetto, lo chiamo un "romanista fracico": un tifoso appassionato, diretto e pieno di personalità.</p>
 
@@ -29,8 +46,10 @@
     <p>Questa pagina è un piccolo omaggio all'amicizia e alla passione per la squadra.</p>
     
     <h2>Rivalità amichevole</h2>
-    <p><strong>Rivalità:</strong> Io sono juventino e Samuele è romanista — è una rivalità scherzosa che ci anima durante le partite.</p>
-    <p><strong>Nota su Fortnite:</strong> <u>Samuele su Fortnite fa proprio schifo</u> — lo prendiamo sempre in giro per questo!</p>
+    <div class="rivalry">
+      <p><strong>Rivalità:</strong> Io sono juventino e Samuele è romanista — è una rivalità scherzosa che ci anima durante le partite.</p>
+      <p><strong>Nota su Fortnite:</strong> <u class="note-fortnite">Samuele su Fortnite fa proprio schifo</u> — lo prendiamo sempre in giro per questo!</p>
+    </div>
     
     <h2>Perché è speciale per l'INPS</h2>
     <p>Per l'INPS Samuele riceve un sostegno ufficiale che lo aiuta nella vita quotidiana.</p>
